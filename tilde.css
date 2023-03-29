@@ -1,7 +1,7 @@
 h1 ~ div {
 width: 100px;
 height: 100px;
-background-color: yellow;
+background-color: pink;
 margin-bottom: 30px;
 border: 3px dashed black;
 }
