@@ -1,0 +1,17 @@
+h1:hover {
+    transform: translateX(40%);
+}
+
+h1 {
+    text-align: left;
+    transform: translateX(0);
+    transition: transform 1.5s;
+}
+
+div {
+    width: 100vw;
+}
+
+div:hover {
+    background-color: black;
+}
