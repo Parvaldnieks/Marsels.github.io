@@ -31,3 +31,21 @@ div {
   transform: rotate(90deg);
 
 }
+
+button {
+  transition-duration: 0.5s;
+  border: none;
+  background-color: black;
+}
+
+button:hover {
+  background-color: white;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
