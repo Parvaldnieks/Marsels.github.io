@@ -25,3 +25,91 @@ button {
 button:hover {
     background-color: lightgrey;
 }
+
+
+
+header {
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 4;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+ul {
+    display: flex;
+    align-items: left;
+    justify-content:  space-around;
+}
+
+li {
+    list-style-type: none;
+    transition: transform 0.5s;
+}
+
+li:hover {
+transform: translateX(10px);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 1s;
+}
+a:hover {
+    color:red;
+}
+
+main {
+    margin-top: 5%;
+}
+
+ .burger{
+    display: none;
+}
+
+.check {
+    display: none
+}
+
+
+@media (max-width: 200px) {
+    .burger{
+        display: block;
+    }
+
+    ul{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        background-color: lightgrey;
+        width: 100vw;
+        padding-left: 0;    
+        align-items: center;
+        margin: 0;
+        display: none;
+    border-style: solid;
+    border-radius: 15px;
+    }
+    li{
+        padding-bottom: 20px;
+    }
+
+    .check {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        cursor: pointer;
+        }
+    .check:checked + ul {
+        display: flex;
+        }
+}

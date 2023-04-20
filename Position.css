@@ -42,6 +42,9 @@ main {
     display: none;
 }
 
+.check {
+    display: none
+}
 
 @media (max-width: 200px) {
     .burger{
@@ -59,6 +62,8 @@ main {
         align-items: center;
         margin: 0;
         display: none;
+    border-style: solid;
+    border-radius: 15px;
     }
     li{
         padding-bottom: 20px;
