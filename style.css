@@ -1,9 +1,31 @@
 html {
+    --header-height: 60px;
+}
+
+html[data-theme="light"] {
     --krasa: rgb(201, 211, 70);
 }
 
+html[data-theme="dark"] {
+    --krasa: rgba(163, 40, 211, 0.699);
+}
+
 body {
-    --krasa: red;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--krasa);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+main {
+    margin-top: var(--header-height);
 }
 
 h1 {
@@ -17,6 +39,7 @@ p {
 h2 {
     color: var(--krasa);
 }
+
 
 
 
