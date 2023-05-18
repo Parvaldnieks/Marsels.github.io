@@ -30,8 +30,3 @@ if(theme == 'light' || !theme) {
     document.getElementById('toggle-theme').checked = true;
 
 }
-
-
-
-
-

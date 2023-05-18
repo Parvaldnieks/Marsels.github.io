@@ -1,0 +1,87 @@
+html {
+    --header-height: 60px;
+    --krasa-text: black;
+    --krasa-header: rgb(236, 206, 180); 
+    --krasa-button: rgb(236, 206, 180);
+    background-color: rgb(240, 237, 212);
+    --sun: block;
+    --moon: none;
+}
+
+html[data-theme="dark"] {
+    background-color: rgb(12, 19, 79);
+    --krasa-text: white;
+    --krasa-header: rgb(92, 70, 156);
+    --krasa-button: rgb(92, 70, 156);
+    --sun: none;
+    --moon: block;
+}
+
+#toggle-theme {
+    width: 50px;
+    opacity: 0;
+}
+
+#sun {
+    display: var(--sun);
+}
+
+#moon {
+    display: var(--moon);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--krasa-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 0;
+}
+
+header > input {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+}
+main {
+    margin-top: var(--header-height);
+}
+
+h1 {
+    color: var(--krasa-text);
+}
+
+p {
+    color: var(--krasa-text);
+}
+
+button {
+    background-color: var(--krasa-header);
+    color: var(--krasa-text);
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 15px;
+}
+  
+button:active {
+    background-color: var(--krasa-button);
+    box-shadow: 0 5px var(--krasa-text);
+    transform: translateY(4px);
+}
+   
+  
