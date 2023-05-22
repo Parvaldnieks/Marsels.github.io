@@ -30,3 +30,46 @@ if(theme == 'light' || !theme) {
     document.getElementById('toggle-theme').checked = true;
 
 }
+
+
+
+
+const visasPareizasAtbildes = ["Indonēzija", "Austrālija", "Liepāja"];
+
+for(let i=1; i<=3; i++) {
+    const visasAtbildes = document.getElementsByName(i);
+
+    visasAtbildes.forEach(atbilde => {
+        atbilde.addEventListener("click", () =>
+         checkHandler(visasPareizasAtbildes[i-1], visasAtbildes));
+    });
+}
+
+
+/**
+ * iekrāso atbildes vienā jautājumā
+ * @param {string} pareizaAtbilde - Pareizā atbilde ar vārdiem
+ * @param {*} visasAtbildes 
+ */
+console.log(visasPareizasAtbildes);
+function checkHandler(pareizaAtbilde, visasAtbildes) {
+
+    visasAtbildes.forEach(atbilde => {
+
+        if(atbilde.checked == true) {
+
+            if(atbilde.value == pareizaAtbilde) {
+                atbilde.parentNode.style.backgroundColor = "green";
+
+            } else {
+                atbilde.parentNode.style.backgroundColor = "red";
+            }
+
+        } else {
+            atbilde.parentNode.style.backgroundColor = "var(--krasa-vietam)";
+        }
+    });
+}
+
+
+
