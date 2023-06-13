@@ -1,0 +1,95 @@
+html {
+    --header-height: 60px;
+    --krasa-text: black;
+    --krasa-header: rgb(249, 251, 231); 
+    --krasa-button: rgb(249, 251, 231);
+    background-color: rgb(236, 206, 180);
+    --krasa-vietam: rgb(240, 237, 212);
+    --sun: block;
+    --moon: none;
+}
+
+html[data-theme="dark"] {
+    background-color: rgb(29, 38, 125);
+    --krasa-text: white;
+    --krasa-header: rgb(92, 70, 156);
+    --krasa-button: rgb(92, 70, 156);
+    --krasa-vietam: rgb(12, 19, 79);
+    --sun: none;
+    --moon: block;
+}
+
+#toggle-theme {
+    width: 50px;
+    opacity: 0;
+}
+
+#sun {
+    display: var(--sun);
+}
+
+#moon {
+    display: var(--moon);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--krasa-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 0;
+}
+
+header > input {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+}
+main {
+    margin-top: var(--header-height);
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    color: var(--krasa-text);
+}
+
+p {
+    color: var(--krasa-text);
+}
+
+label {
+    background-color: var(--krasa-vietam);
+    color: var(--krasa-text);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
