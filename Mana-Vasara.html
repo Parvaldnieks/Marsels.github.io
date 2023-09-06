@@ -5,14 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mana Vasara</title>
-    <link rel="stylesheet" href="Mana-Vasara.css" />
+    <link rel="stylesheet" href="Mana-Vasara.css"/>
+
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .image-container img {
+            height: 400px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+    
+        .image-container .hover-text {
+            position: absolute;
+            top: -35px;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        .image-container:hover img {
+            transform: translate(10px, 10px);
+        }
+    
+        .image-container:hover .hover-text {
+            opacity: 1;
+        }
+    </style>
+
 </head>
 
-<body class="body">
-    <h1 class="imants">Mana vasara</h1>
-    <p>1. Imantiņš pie mazās maximas vēlu vakarā ar izsķaidītu alu rokās.</p>
-    <img src="Cesu-Puik.jpg">
 
+
+<body class="body">
+
+    <h1 class="imants">Mana vasara</h1>
+        
+
+    <br>
+    <br>
+
+
+    <div class="image-container">
+        <img src="Imants.jpg">
+        <div class="hover-text">1. Imantiņš pie mazās maximas vēlu vakarā ar izsķaidītu alu rokās🌃.</div>
+    </div>
+
+    <div class="image-container">
+        <img src="rox.jpg">
+        <div class="hover-text">2. Neliela iesildīšanās pirms night ride🌞.</div>
+    </div>
+
+    <div class="image-container">
+        <img src="night-ride1.jpg">
+        <div class="hover-text">3. Šis bija pirmais night ride🌃.</div>
+    </div>
+
+    <div class="image-container">
+        <img src="uzkodas.jpg">
+        <div class="hover-text">4. Starpā bija nelielas uzkodas🍟.</div>
+    </div>
+
+    <div class="image-container">
+        <img src="night-ride2.jpg">
+        <div class="hover-text">5. Šis bija otrais night ride🌃.</div>
+    </div>
 
 </body>
 
